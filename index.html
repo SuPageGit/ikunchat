@@ -1,81 +1,18 @@
-
-
-
-
-<!-- COMMENTS SHAREBAR: Place it where you want SHARES to be displayed -->
-<div class="vuukle-sharebar"></div>
-
-
-
-
-
-<!-- EMOTES WRAPPER: Place it where you want emotes to be displayed -->
-<div id="vuukle-emote"></div>
-
-
-
-
-
-<!-- COMMENTS WRAPPER: Place it where you want comments to be displayed -->
-<div id="vuukle-comments"></div>
-
-
+<!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC81Njg1MC8zMzMxNA==">
 <script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
 
-  var VUUKLE_CONFIG = {
-    "apiKey": "772b410f-4df9-4305-9ae3-5fc61fe60c98",
-    "host": "chat.iikun.tk",
-    "articleId": "!!! GENERATE UNIQUE ID FOR YOUR ARTICLE !!!",
-    "img": "!!! ARTICLE IMAGE URL !!!",
-    "tags": "!!! UP TO 3 TAGS SEPARATED BY COMMA !!!",
-    "url": "https://chat.iikun.tk",
-    "title": "string",
-    "author": "string",
-    "language": "en",
-    "recommendedArticles": false,
-    "globalRecommendations": false,
-    "wideImages": false,
-    "comments": {
-        "enabled": true,
-        "editorOptions": [
-            "bold",
-            "italic",
-            "underline",
-            "url",
-            "blockquote",
-            "code",
-            "list",
-            "image",
-            "gif"
-        ],
-        "transliteration": {
-            "language": "en",
-            "enabledByDefault": false
-        },
-        "commentingClosed": false,
-        "countToLoad": 5
-    },
-    "emotes": {
-        "enabled": true,
-        "disable": [
-            5,
-            6
-        ]
-    },
-    "sharebar": {
-        "enabled": true,
-        "verticalPosition": "10px",
-        "mode": "horizontal"
-    }
-};
+       if (typeof LivereTower === 'function') { return; }
 
-  //⛔️ DON'T EDIT BELOW THIS LINE
-  (function() {
-    var d = document,
-        s = d.createElement('script');
-        
-    s.src = 'https://cdn.vuukle.com/platform.js';
-    (d.head || d.body).appendChild(s);
-  })();
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
 </script>
-  
+<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
